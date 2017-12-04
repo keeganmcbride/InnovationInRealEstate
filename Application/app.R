@@ -3,16 +3,16 @@ library(shiny); library(leaflet); library(ggmap);library(geojsonio); library(DT)
 
 
 #Load School Data
-schoolData <- readRDS("../Datasets/schoolDataSubset.RDS")
-lasteaedData <- readRDS("../Datasets/lasteaedData.RDS")
+schoolData <- readRDS("Datasets/schoolDataSubset.RDS")
+lasteaedData <- readRDS("Datasets/lasteaedData.RDS")
 
 #Load Crash Data
-crashData <- readRDS("../Datasets/crashDataCleanedFixed.RDS")
+crashData <- readRDS("Datasets/crashDataCleanedFixed.RDS")
 
 #Load Crimedata
-crimeProperty <- readRDS("../Datasets/crimeProperty.RDS")
-crimeState <- readRDS("../Datasets/crimeStateMerged.RDS")
-crimeTraffic <- readRDS("../Datasets/crimeTrafficMerged.RDS")
+crimeProperty <- readRDS("Datasets/crimeProperty.RDS")
+crimeState <- readRDS("Datasets/crimeStateMerged.RDS")
+crimeTraffic <- readRDS("Datasets/crimeTrafficMerged.RDS")
 
 #Get Linnaosa Districts
 #linnaosaJSON <- geojson_read("Datasets/geojsonboundaries.json",what = "sp")
